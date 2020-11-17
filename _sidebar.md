@@ -1,6 +1,7 @@
 
 - Java基础
-  - [基础](base/base.md)
+  - [面向对象](base/oop.md)
+  - [集合](base/collection.md)
 - JVM
   - [JVM 虚拟机](jvm/jvm.md)
   - [GC 垃圾回收](jvm/GC.md)
