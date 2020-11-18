@@ -11,8 +11,9 @@
   - [JMM 内存模型](jmm/jmm.md)
 
 - Spring
+  - [Bean](spring/Bean.md)
   - [IoC 控制反转](spring/IoC.md)
-  - [AOP 面向切面的编程](spring/AOP.md)
-
+- [AOP 面向切面的编程](spring/AOP.md)
+  
 - 并发
 
