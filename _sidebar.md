@@ -2,18 +2,21 @@
 - Java基础
   - [面向对象](base/oop.md)
   - [集合](base/collection.md)
+  - [字符串](base/string.md)
 - JVM
   - [JVM 虚拟机](jvm/jvm.md)
   - [GC 垃圾回收](jvm/GC.md)
-
 - JMM
-  - [CPU 内存模型](jmm/cpu-mm.md)
+  - [CPU 内存模型](jmm/cpu-cache.md)
   - [JMM 内存模型](jmm/jmm.md)
-
 - Spring
   - [Bean](spring/Bean.md)
   - [IoC 控制反转](spring/IoC.md)
-- [AOP 面向切面的编程](spring/AOP.md)
-  
+  - [AOP 面向切面的编程 ](spring/AOP.md)
 - 并发
+  - [基础](concurrent/base.md)
+  - [volatile关键字](concurrent/volatile.md)
+  - [锁](concurrent/lock.md)
 
+- 计算机网络
+  - [网络基础](network/base.md)
