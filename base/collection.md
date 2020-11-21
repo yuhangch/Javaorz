@@ -17,9 +17,17 @@ Java中集合分为四种List、Queue、Set和Map。
 - Set（不可重复）
 - //TODO
 
-## Q2:说说ConcurrentHashMap实现并发的原理
+## Q2:HashMap内部结构和实现
 
-减小锁的力度
+HashMap的内部是一个数组，数组中每个元素都是一个单向链表，链表中每个元素都是嵌套的Entry实例。ENtry实例包含四个属性：Key、Value、Hash值和指向下个元素的next。
+
+为了减小遍历开销，Java 8对HashMap进行了优化，在保存元素超过8个以后，HashMap将链表转换为红黑树。
+
+
+
+## Q3:说说ConcurrentHashMap实现并发的原理
+
+减小锁的粒度
 
 在HashMap中，如果为了线程安全对整个HashMap加锁，可以得到线程安全的对象，但加锁力度太大，降低效率。在ConcurrentHashMap内部使用数据段（Segment）的方式，在修改数据时只需对其中一个数据段加锁，减小了锁的粒度。
 

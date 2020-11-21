@@ -18,3 +18,18 @@
 2. 多线程环境下，线程首次读取共享变量时，首先从主内存获取该变量，然后存入工作内存中，之后只需从工作内存中读取。执行修改操作时，先将新值写入工作内存，然后刷新至主内存中。
 
 3. JMM具备天生的有序规则，不需任何手段就能保证有序性，这个规则称为Happens-Before原则。但如果操作的执行次序无法以此推断出来，那虚拟机或处理器就可以随意重排序。
+
+## Q3:线程创建方式
+
+- 继承Thread类
+- 实现Runable接口
+- 通过ExecutorService和`Callable<Class>`
+- 基于线程池
+
+## Q4:5种常见的线程池
+
+- newCachedThreadPool：可缓存的线程池
+- newFIxedThreadPool：固定大小的线程池
+- newScheduledThreadPool：可做任务调度的线程池
+- newSingleThreadExecutor：单个线程的线程池
+- newWorkStealingPool：足够大小的线程池
