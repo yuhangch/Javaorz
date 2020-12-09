@@ -28,8 +28,16 @@
 
 ## Q4:5种常见的线程池
 
-- newCachedThreadPool：可缓存的线程池
-- newFIxedThreadPool：固定大小的线程池
-- newScheduledThreadPool：可做任务调度的线程池
-- newSingleThreadExecutor：单个线程的线程池
-- newWorkStealingPool：足够大小的线程池
+- CachedThreadPool：可缓存的线程池
+  执行多个短期异步任务，在负载较轻的服务器上
+
+- FixedThreadPool：固定大小的线程池
+
+  适用于限制线程数量的应用场景
+
+- ScheduledThreadPool：可做任务调度的线程池
+
+- SingleThreadExecutor：单个线程的线程池
+  适用于需要顺序执行每个任务时
+
+- WorkStealingPool：足够大小的线程池
