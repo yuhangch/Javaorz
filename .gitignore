@@ -1,2 +1,3 @@
 *.idea
 templates/out
+*DS_Store
